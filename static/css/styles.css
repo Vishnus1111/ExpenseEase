@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00796b;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #00796b;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #004d40;
+}
+
+/* Dashboard and Card Styles */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.card {
+    padding: 1.5em;
+    background-color: #f0f4f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* History Page Styling */
+.history .expense-list {
+    margin-top: 1em;
+}
+
+.history .expense-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em;
+    border-bottom: 1px solid #eee;
+}
+
+.history .expense-item span {
+    flex-basis: 25%;
+}
+/* Dashboard and History Background Styling */
+.dashboard, .history {
+    background-image: url("../images/dashboard_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
